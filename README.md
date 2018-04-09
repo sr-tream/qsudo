@@ -1,7 +1,7 @@
 # gsudo
 GUI for sudo<br/>
-![Alt screen1](https://dl.prime-hack.net/Screenshot_20180409_174712.png)
-![Alt screen2](https://dl.prime-hack.net/Screenshot_20180409_174739.png)
+![Alt screen1](https://dl.prime-hack.net/Screenshot_20180409_204500.png)
+![Alt screen2](https://dl.prime-hack.net/Screenshot_20180409_204534.png)
 
 ## Feature
 * You can use sudo options
