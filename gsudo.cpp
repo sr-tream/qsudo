@@ -52,10 +52,10 @@ void Gsudo::sudoFinished(int code, QProcess::ExitStatus)
 void Gsudo::on_showPass_clicked()
 {
 	if (pass->echoMode() == QLineEdit::Password){
-		showPass->setIcon(QIcon(":/eye.png"));
+                showPass->setIcon(QIcon(":/passShow.png"));
 		pass->setEchoMode(QLineEdit::Normal);
 	} else {
-		showPass->setIcon(QIcon(":/closed.png"));
+                showPass->setIcon(QIcon(":/passHide.png"));
 		pass->setEchoMode(QLineEdit::Password);
 	}
 }

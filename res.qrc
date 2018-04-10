@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>eye.png</file>
-        <file>closed.png</file>
+        <file>passShow.png</file>
+        <file>passHide.png</file>
     </qresource>
 </RCC>
