@@ -1,4 +1,4 @@
-# gsudo
+# qsudo
 GUI for sudo<br/>
 ![Alt screen1](https://dl.prime-hack.net/Screenshot_20180409_204500.png)
 ![Alt screen2](https://dl.prime-hack.net/Screenshot_20180409_204534.png)
@@ -13,7 +13,7 @@ GUI for sudo<br/>
 `make`
 
 ## Usage
-`./gsudo [options] programm`
+`./qsudo [options] programm`
 
 #### Example
-`./gsudo -E gparted`
+`./qsudo -E gparted`
