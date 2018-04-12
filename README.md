@@ -13,7 +13,7 @@ GUI for sudo<br/>
 `make`
 
 ## Usage
-`./qsudo [options] programm`
+`./qsudo [options] program`
 
 #### Example
 `./qsudo -E gparted`
