@@ -1,4 +1,5 @@
 #include "qsudo.h"
+#include <iostream>
 
 Qsudo::Qsudo(int &argc, char **argv, QWidget *parent) :
 	QDialog(parent)
@@ -41,7 +42,8 @@ void Qsudo::parseOutput()
 			if (isHidden())
 				show();
 		}
-	}
+	} else
+		std::cout << stdout.toStdString();
 }
 
 void Qsudo::sudoFinished(int code, QProcess::ExitStatus)
