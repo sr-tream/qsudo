@@ -16,7 +16,7 @@ Qsudo::Qsudo(QStringList arguments, QWidget *parent) :
 	args << "-p"; // Use a custom password prompt with optional escape sequences.
 	args << "qsudogetpass"; // prompt
 	for (auto &argument : arguments){
-		if (argument.front() != '-' && windowTitle() == "Qsudo")
+		if (argument.at(0) != '-' && windowTitle() == "Qsudo")
 			setWindowTitle(argument);
 		args << argument;
 	}
