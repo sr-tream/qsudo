@@ -1,9 +1,10 @@
 #include "qsudo.h"
 #include <iostream>
 
-Qsudo::Qsudo(int &argc, char **argv, QWidget *parent) :
+Qsudo::Qsudo(QStringList arguments, QWidget *parent) :
 	QDialog(parent)
 {
+	arguments.pop_front();
 	setupUi(this);
 	sudo = new QProcess();
 
@@ -14,8 +15,11 @@ Qsudo::Qsudo(int &argc, char **argv, QWidget *parent) :
 	args << "-S"; // Write the prompt to the standard error and read the password from the standard input instead of using the terminal device.
 	args << "-p"; // Use a custom password prompt with optional escape sequences.
 	args << "qsudogetpass"; // prompt
-	for (int i = 1; i < argc; ++i)
-		args << argv[i];
+	for (auto &argument : arguments){
+		if (argument.front() != '-' && windowTitle() == "Qsudo")
+			setWindowTitle(argument);
+		args << argument;
+	}
 
 	sudo->setArguments(args);
 	sudo->setEnvironment(QProcess::systemEnvironment());

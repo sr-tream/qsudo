@@ -9,7 +9,7 @@ class Qsudo : public QDialog, private Ui::Qsudo
 {
 	Q_OBJECT
 public:
-	explicit Qsudo(int &argc, char **argv, QWidget *parent = 0);
+	explicit Qsudo(QStringList arguments, QWidget *parent = 0);
 
 protected:
 	void writePassword();
