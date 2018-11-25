@@ -1,7 +1,7 @@
 # qsudo
 GUI for sudo<br/>
-![qsudo -E gparted // hide password](https://dl.prime-hack.net/2018-08-07-115329_296x124_scrot.png)
-![qsudo -E gparted // show password](https://dl.prime-hack.net/2018-08-07-115341_295x124_scrot.png)
+![qsudo -E gparted // hide password](https://dl.prime-hack.net/161031543108073.png)
+![qsudo -E gparted // show password](https://dl.prime-hack.net/161501543108084.png)
 
 ## Feature
 
